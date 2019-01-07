@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/notif"
+    android:padding="15dp"
+    android:background="@color/background"
+    tools:context=".BookingFragment">
+
+
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="250dp"
+            app:fabSize="normal"
+            app:backgroundTint="@color/button"
+            android:src="@drawable/baseline_input_black_18dp"
+            android:id="@+id/bFloat"
+            />
+    </android.support.design.widget.CoordinatorLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Book Court Now"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Court"
+        android:textSize="20dp" />
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="257dp"
+        android:layout_height="38dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Date"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/sDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" SELECT THE DATE"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Starting Time"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/sStartTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" SELECT THE TIME"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Ending Time"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/sEndTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" SELECT THE TIME"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/insertBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Book now"
+        android:textSize="20dp" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/colorPrimaryDark">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/showBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Ground Details"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="65dp" />
+
+
+  </LinearLayout>
+
+
+
+
+</FrameLayout>
